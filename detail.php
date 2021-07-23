@@ -41,7 +41,7 @@
                 id: '<?php $preference->id; ?>'
             },
             render: {
-                    container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
+                    container: '.as-producttile-info', //'.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
                     label: 'Pagar-Gon', // Cambia el texto del botón de pago (opcional)
             }
         });
