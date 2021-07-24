@@ -18,11 +18,13 @@
     //  Creo Item
     $item = new MercadoPago\Item();
     $item -> id = 1234;
-    $item -> title = $_POST['title'];
-    $item -> description = "Dispositivo móvil de Tienda e-commerce";
-    $item -> picture_url = $_POST['img'];
+    #$item -> title = $_POST['title'];
+    $item -> title = 'Prueba de titulo';
+    $item -> description = "Prueba de descripcion";
+    #$item -> picture_url = $_POST['img'];
     $item -> quantity = 1;
-    $item -> unit_price = $_POST['price'];
+    #$item -> unit_price = $_POST['price'];
+    $item -> unit_price = 1234.56;
     $preference -> items = array($item);
     //
 
@@ -61,7 +63,7 @@
     </head>
 
     <body>
-        
+
         <form action="detail2.php" method="POST">
 
             <script
