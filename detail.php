@@ -206,6 +206,8 @@
                                             data-preference-id="<?php echo $preference -> id; ?>">
                                         </script>
 
+                                        <a href="<?php echo $preference -> init_point; ?>">Pagar con Mercado Pago</a>
+
                                     </form>
                                 </div>
                             </div>
