@@ -3,7 +3,7 @@
     require __DIR__ .  '/vendor/autoload.php';
     
     // Agrega credenciales
-    MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
+    MercadoPago\SDK::setAccessToken('TEST-7892157177460921-030322-ceb964be4439a87efac7b39c63718e09-31823309');
 
     // Crea un objeto de preferencia
     $preference = new MercadoPago\Preference();
@@ -28,7 +28,7 @@
         <script src="https://sdk.mercadopago.com/js/v2"></script>
         
         <script>
-            const mp = new MercadoPago('dev_24c65fb163bf11ea96500242ac130004', {
+            const mp = new MercadoPago('TEST-df699538-52a2-4f37-8bae-f7df14723a8d', {
                     locale: 'es-AR'
             });
 
