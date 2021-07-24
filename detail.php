@@ -48,9 +48,9 @@
 
     //  Páginas de retorno
     $preference -> back_urls = array(
-        "success" => "success.php",
-        "pending" => "pending.php",
-        "failure" => "failure.php"
+        "success" => "https://gonexe-mp-commerce-php.herokuapp.com/success.php",
+        "pending" => "https://gonexe-mp-commerce-php.herokuapp.com/pending.php",
+        "failure" => "https://gonexe-mp-commerce-php.herokuapp.com/failure.php"
     );
     //
 
