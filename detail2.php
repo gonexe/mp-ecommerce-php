@@ -17,13 +17,20 @@
 
     //  Creo Item
     $item = new MercadoPago\Item();
-    $item->title = 'Prueba';
-    $item->quantity = 2;
-    $item->unit_price = 123.45;
-    $preference->items = array($item);
+    $item -> id = 1234;
+    $item -> title = $_POST['title'];
+    $item -> description = "Dispositivo móvil de Tienda e-commerce";
+    $item -> picture_url = $_POST['img'];
+    $item -> quantity = 1;
+    $item -> unit_price = $_POST['price'];
+    $preference -> items = array($item);
     //
 
-    //  Excluyo tarjetas AMEX y como máximo 6 cuotas
+    //  Referencia externa (mail)
+    $preference -> external_reference = "gon.exe@gmail.com";
+    //
+
+    //  Excluyo tarjetas AMEX + Máximo de 6 cuotas + Excluyo pagos por Cajero
     $preference->payment_methods = array(
         "excluded_payment_methods" => array(
             array(
@@ -40,7 +47,7 @@
     //
 
     //  Guardo Preferencia
-    $preference->save();
+    $preference -> save();
     //
 
 ?>
