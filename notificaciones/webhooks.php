@@ -1,4 +1,8 @@
 <?php
+
+    http_response_code(201);
+
+/*
     //  SDK de Mercado Pago
     require __DIR__ .  '../vendor/autoload.php';
     //
@@ -61,3 +65,5 @@
     }
     //
 
+*/
+?>
