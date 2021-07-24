@@ -23,7 +23,7 @@
     $preference->items = array($item);
     //
 
-    //  Excluyo tarjetas AMEX y como máximo 6 cuotas
+    //  Excluyo tarjetas AMEX + Máximo de 6 cuotas + Excluyo pagos por Cajero
     $preference->payment_methods = array(
         "excluded_payment_methods" => array(
             array(
@@ -34,9 +34,6 @@
         "excluded_payment_types" => array(
             array(
                 "id" => "atm"
-            ),
-            array(
-                "id" => "ticket"
             )
         )
     );
