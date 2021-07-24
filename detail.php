@@ -31,7 +31,7 @@
     //
 
     //  Excluyo tarjetas AMEX + Máximo de 6 cuotas + Excluyo pagos por Cajero
-    $preference->payment_methods = array(
+    $preference -> payment_methods = array(
         "excluded_payment_methods" => array(
             array(
                 "id" => "amex"
@@ -44,6 +44,18 @@
             )
         )
     );
+    //
+
+    //  Páginas de retorno
+    $preference -> back_urls = array(
+        "success" => "success.php",
+        "pending" => "pending.php",
+        "failure" => "failure.php"
+    );
+    //
+
+    //  Redirección automática en aprobaciones
+    $preference -> auto_return = "approved";
     //
 
     //  Guardo Preferencia
