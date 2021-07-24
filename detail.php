@@ -34,6 +34,9 @@
         "excluded_payment_types" => array(
             array(
                 "id" => "atm"
+            ),
+            array(
+                "id" => "ticket"
             )
         )
     );
