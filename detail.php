@@ -30,6 +30,10 @@
     $preference -> external_reference = "gon.exe@gmail.com";
     //
 
+    //  Webhooks
+    $preference -> notification_url = "https://gonexe-mp-commerce-php.herokuapp.com/webhooks.php";
+    //
+
     //  Excluyo tarjetas AMEX + Máximo de 6 cuotas + Excluyo pagos por Cajero
     $preference -> payment_methods = array(
         "excluded_payment_methods" => array(
