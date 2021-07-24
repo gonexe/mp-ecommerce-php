@@ -15,7 +15,6 @@
     $item->unit_price = 75.56;
     $preference->items = array($item);
     $preference->save();
-    print_r($preference);exit;
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +24,7 @@
             <meta name="viewport" content="width-device-width, initial-scale=1.0">
             <title>Prueba Gonzalo</title>
         </head>
-        
+
         <script src="https://sdk.mercadopago.com/js/v2"></script>
         
         <script>
