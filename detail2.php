@@ -15,9 +15,9 @@
     $item->unit_price = 123.45;
     $preference->items = array($item);
     $preference->save();
-    #print_r($preference-> id);exit;
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
