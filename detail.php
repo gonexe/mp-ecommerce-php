@@ -187,7 +187,7 @@
                                     <!--
                                         <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
                                     !-->
-                                    <form action="detail2.php" method="POST">
+                                    <form action="capturarRespuesta.php" method="GET">
 
                                         <script
                                             src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
