@@ -1,20 +1,47 @@
 <?php
-    // SDK de Mercado Pago
+    //  SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
+    //
     
-    // Agrega credenciales
+    //  Agrego Credencial (Access Token)
     MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
+    //
 
-    // Crea un objeto de preferencia
+    //  Agrego Integrador ID
+    MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
+    //
+
+    //  Creo Objeto de Preferencia
     $preference = new MercadoPago\Preference();
+    //
 
-    // Crea un ítem en la preferencia
+    //  Creo Item
     $item = new MercadoPago\Item();
     $item->title = 'Prueba';
     $item->quantity = 2;
     $item->unit_price = 123.45;
     $preference->items = array($item);
+    //
+
+    //  Excluyo tarjetas AMEX y como máximo 6 cuotas
+    $preference->payment_methods = array(
+        "excluded_payment_methods" => array(
+            array(
+                "id" => "amex"
+            )
+        ),
+        "installments" => 6,
+        "excluded_payment_types" => array(
+            array(
+                "id" => "atm"
+            )
+        )
+    );
+    //
+
+    //  Guardo Preferencia
     $preference->save();
+    //
 
 ?>
 
