@@ -1,10 +1,10 @@
 <?php
 
-    http_response_code(201);
+    #http_response_code(201);
 
-/*
+#/*
     //  SDK de Mercado Pago
-    require __DIR__ .  '../vendor/autoload.php';
+    require __DIR__ .  '/vendor/autoload.php';
     //
     
     //  Agrego Credencial (Access Token)
@@ -17,7 +17,7 @@
     //
 
     //  Guardo mensaje en servidor
-    file_put_contents('notificaciones/'.$data -> id.".json", $body);
+    file_put_contents($data -> id.".json", $body);
     //
 
     //  Verifico de que tipo de notificación se trata
@@ -65,5 +65,5 @@
     }
     //
 
-*/
+#*/
 ?>
