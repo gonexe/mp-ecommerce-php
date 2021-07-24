@@ -201,13 +201,15 @@
                                     !-->
                                     <form action="capturarRespuesta.php" method="GET">
 
+                                    <!--
                                         <script
                                             src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                                             data-preference-id="<?php echo $preference -> id; ?>">
                                         </script>
-
+                                    !-->
+                                    
                                         <a href="<?php echo $preference -> init_point; ?>">
-                                            <button class="mercadopago-button">Pagar la compra</button>
+                                            Pagar la compra
                                         </a>
 
                                     </form>
