@@ -26,30 +26,14 @@
         <title>Prueba Gonzalo</title>
     </head>
 
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-    
-    <script>
-        const mp = new MercadoPago('TEST-df699538-52a2-4f37-8bae-f7df14723a8d', {
-            locale: 'es-AR'
-        });
-
-        // Inicializa el checkout
-        mp.checkout({
-            preference: {
-                id: '<?php echo $preference->id; ?>'
-            },
-            render: {
-                container: '.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
-                label: 'Pagar Gonzalo', // Cambia el texto del botón de pago (opcional)
-            }
-        });
-    </script>
-
     <body>
         <form action="detail2.php" method="POST">
-            <div class="cho-container" id="cho-container">
 
-            </div>
+            <script
+                src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                data-preference-id="<?php echo $preference->id; ?>">
+            </script>
+
         </form>
     </body>
 </html>
