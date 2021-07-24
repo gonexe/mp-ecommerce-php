@@ -25,8 +25,7 @@
             <meta name="viewport" content="width-device-width, initial-scale=1.0">
             <title>Prueba Gonzalo</title>
         </head>
-    <body>
-    
+        
         <script src="https://sdk.mercadopago.com/js/v2"></script>
         
         <script>
@@ -46,6 +45,7 @@
             });
         </script>
 
+    <body>
         <form action="detail2.php" method="POST">
             <div class=".cho-container">
 
