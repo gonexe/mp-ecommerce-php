@@ -29,7 +29,7 @@
     <script src="https://sdk.mercadopago.com/js/v2"></script>
     
     <script>
-        const mp = new MercadoPago('dev_24c65fb163bf11ea96500242ac130004', {
+        const mp = new MercadoPago('TEST-df699538-52a2-4f37-8bae-f7df14723a8d', {
             locale: 'es-AR'
         });
 
