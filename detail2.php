@@ -61,6 +61,7 @@
     </head>
 
     <body>
+        
         <form action="detail2.php" method="POST">
 
             <script
@@ -69,5 +70,6 @@
             </script>
 
         </form>
+
     </body>
 </html>
