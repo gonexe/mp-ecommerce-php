@@ -10,9 +10,9 @@
 
     // Crea un ítem en la preferencia
     $item = new MercadoPago\Item();
-    $item->title = 'Mi producto';
-    $item->quantity = 1;
-    $item->unit_price = 75.56;
+    $item->title = 'Prueba';
+    $item->quantity = 2;
+    $item->unit_price = 123.45;
     $preference->items = array($item);
     $preference->save();
 
@@ -26,26 +26,6 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
-
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
-
-    <script>
-        // Agrega credenciales de SDK
-        const mp = new MercadoPago('PUBLIC_KEY', {
-                locale: 'es-AR'
-        });
-
-        // Inicializa el checkout
-        mp.checkout({
-            preference: {
-                id: '<?php $preference->id; ?>'
-            },
-            render: {
-                    container: '.as-producttile-info', //'.cho-container', // Indica el nombre de la clase donde se mostrará el botón de pago
-                    label: 'Pagar-Gon', // Cambia el texto del botón de pago (opcional)
-            }
-        });
-    </script>
 
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -170,7 +150,17 @@
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <!--
+                                        <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    !-->
+                                    <form action="detail2.php" method="POST">
+
+                                        <script
+                                            src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                            data-preference-id="<?php echo $preference->id; ?>">
+                                        </script>
+
+                                    </form>
                                 </div>
                             </div>
                         </div>
