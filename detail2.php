@@ -47,7 +47,7 @@
 
     <body>
         <form action="detail2.php" method="POST">
-            <div class="cho-container">
+            <div class="cho-container" id="cho-container">
 
             </div>
         </form>
