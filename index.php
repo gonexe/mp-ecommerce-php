@@ -12,6 +12,8 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
+    <script src="https://www.mercadopago.com/v2/security.js" view="search"></script>
+
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
     <link rel="stylesheet" href="./assets/category.css" media="screen, print">
@@ -258,7 +260,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/samsung-galaxy-s9-xxl.jpg">
+                                            <input type="hidden" name="img" value="samsung-galaxy-s9-xxl.jpg">
                                             <input type="hidden" name="title" value="Samsung Galaxy S9">
                                             <input type="hidden" name="price" value="15000">
                                             <input type="hidden" name="unit" value="1">
@@ -313,7 +315,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/l6g6.jpg">
+                                            <input type="hidden" name="img" value="l6g6.jpg">
                                             <input type="hidden" name="title" value="LG G6">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">
@@ -371,7 +373,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/u_10168742.jpg">
+                                            <input type="hidden" name="img" value="u_10168742.jpg">
                                             <input type="hidden" name="title" value="iPhone 8">
                                             <input type="hidden" name="price" value="16000">
                                             <input type="hidden" name="unit" value="1">
@@ -428,7 +430,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/motorola-moto-g5-plus-1.jpg">
+                                            <input type="hidden" name="img" value="motorola-moto-g5-plus-1.jpg">
                                             <input type="hidden" name="title" value="Motorola G5">
                                             <input type="hidden" name="price" value="9000">
                                             <input type="hidden" name="unit" value="1">
@@ -478,7 +480,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/motorola-moto-g4-3.jpg">
+                                            <input type="hidden" name="img" value="motorola-moto-g4-3.jpg">
                                             <input type="hidden" name="title" value="Moto G4">
                                             <input type="hidden" name="price" value="8000">
                                             <input type="hidden" name="unit" value="1">
@@ -529,7 +531,7 @@
                                             </div>
                                         </div>
                                         <form action="/detail.php" method="get">
-                                            <input type="hidden" name="img" value="./assets/003.jpg">
+                                            <input type="hidden" name="img" value="003.jpg">
                                             <input type="hidden" name="title" value="Sony Xperia XZ2">
                                             <input type="hidden" name="price" value="10000">
                                             <input type="hidden" name="unit" value="1">

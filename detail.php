@@ -31,13 +31,26 @@
     //
 
     //  Datos del pagador
-    $shipments = new MercadoPago\Shipments();
-    $shipments->receiver_address = array(
-        "zip_code" => "1111",
-        "street_number" => "123",
-        "street_name" => "Falsa",)
-    ;
-    $preference->shipments = $shipments;
+    $payer = new MercadoPago\Payer();
+    $payer -> name = "Lalo";
+    $payer -> surname = "Landa";
+    $payer -> email = "test_user_63274575@testuser.com";
+    $payer -> phone = array(
+        "area_code" => "11",
+        "number" => "22223333"
+    );
+
+    $payer -> identification = array(
+        "type" => "DNI",
+        "number" => "63274575"
+    );
+
+    $payer -> address = array(
+        "street_name" => "Falsa",
+        "street_number" => 123,
+        "zip_code" => "1111"
+    );
+    //
 
     //  Webhooks
     $preference -> notification_url = "https://gonexe-mp-commerce-php.herokuapp.com/webhooks.php";
@@ -99,6 +112,8 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
+
+    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
