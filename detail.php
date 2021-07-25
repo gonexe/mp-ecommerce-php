@@ -39,17 +39,16 @@
         "area_code" => "11",
         "number" => "22223333"
     );
-
     $payer -> identification = array(
         "type" => "DNI",
         "number" => "63274575"
     );
-
     $payer -> address = array(
         "street_name" => "Falsa",
         "street_number" => 123,
         "zip_code" => "1111"
     );
+    $preference -> payer = $payer;
     //
 
     //  Webhooks
