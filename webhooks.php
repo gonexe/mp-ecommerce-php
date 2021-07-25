@@ -1,8 +1,5 @@
 <?php
 
-    #http_response_code(201);
-
-#/*
     //  SDK de Mercado Pago
     require __DIR__ .  '/vendor/autoload.php';
     //
@@ -17,7 +14,7 @@
     //
 
     //  Guardo mensaje en servidor
-    f#ile_put_contents($data -> id.".json", $body);
+    #file_put_contents($data -> id.".json", $body);
     //
 
     //  Inserto en BD
