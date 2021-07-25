@@ -19,7 +19,7 @@
 
     //  Inserto en BD
     $db = pg_connect("host=ec2-54-90-55-211.compute-1.amazonaws.com port=5432 dbname=den6lf00l05k48 user=efnrwnfudnxfyf password=370f2c219fe8871d179675b5c541120bc5f8c32baf1f7118f69aa8e7338c96c5");
-    $result = pg_query($conn, "insert into endpoint (endpoint_json, endpoint_fecha_hora) values ('$data',now())");
+    $result = pg_query($db, "insert into endpoint (endpoint_json, endpoint_fecha_hora) values ('$data',now())");
     //
 
     //  Verifico de que tipo de notificación se trata
