@@ -30,6 +30,15 @@
     $preference -> external_reference = "gon.exe@gmail.com";
     //
 
+    //  Datos del pagador
+    $shipments = new MercadoPago\Shipments();
+    $shipments->receiver_address = array(
+        "zip_code" => "1111",
+        "street_number" => 123,
+        "street_name" => "Falsa",)
+    ;
+    $preference->shipments = $shipments;
+
     //  Webhooks
     $preference -> notification_url = "https://gonexe-mp-commerce-php.herokuapp.com/webhooks.php";
     //
@@ -212,9 +221,8 @@
                                         </script>
                                     !-->
 
-                                        <a href="<?php echo $preference -> init_point; ?>" class="mercadopago-button">
-                                            Pagar la compra
-
+                                        <a href="<?php echo $preference -> init_point; ?>">
+                                            <button type='button' class='mercadopago-button' formmethod='post'>Pagar la compra</button>
                                         </a>
 
                                     </form>
