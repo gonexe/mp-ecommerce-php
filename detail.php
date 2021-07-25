@@ -40,7 +40,7 @@
     $preference->shipments = $shipments;
 
     //  Webhooks
-    $preference -> notification_url = "https://gonexe-mp-commerce-php.herokuapp.com/webhooks.php";
+    $preference -> notification_url = "https://testgsp.trenesargentinos.gob.ar/mp-ecommerce-php/webhooks.php";
     //
 
     //  Excluyo tarjetas AMEX + Máximo de 6 cuotas + Excluyo pagos por Cajero
