@@ -34,7 +34,7 @@
     $shipments = new MercadoPago\Shipments();
     $shipments->receiver_address = array(
         "zip_code" => "1111",
-        "street_number" => 123,
+        "street_number" => "123",
         "street_name" => "Falsa",)
     ;
     $preference->shipments = $shipments;
@@ -73,6 +73,15 @@
 
     //  Guardo Preferencia
     $preference -> save();
+    //
+
+    //  Obtengo ID de preferencia
+    $id = $preference -> id;
+    //
+
+    //  Inserto ID en BD
+    $db = pg_connect("host=ec2-54-90-55-211.compute-1.amazonaws.com port=5432 dbname=den6lf00l05k48 user=efnrwnfudnxfyf password=370f2c219fe8871d179675b5c541120bc5f8c32baf1f7118f69aa8e7338c96c5");
+    $result = pg_query($db, "insert into preferencia (preferencia_codigo, preferencia_fecha_hora) values ('$id',now())");
     //
 
 ?>
@@ -214,16 +223,11 @@
                                     !-->
                                     <form action="capturarRespuesta.php" method="GET">
 
-                                    <!--
-                                        <script
-                                            src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                                            data-preference-id="<?php echo $preference -> id; ?>">
-                                        </script>
-                                    !-->
-
+                                        <!--  Boton de Pagar compra personalizada !-->
                                         <a href="<?php echo $preference -> init_point; ?>">
                                             <button type='button' class='mercadopago-button' formmethod='post'>Pagar la compra</button>
                                         </a>
+                                        <!--  Boton de Pagar compra personalizada !-->
 
                                     </form>
                                 </div>
